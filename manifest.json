@@ -9,7 +9,10 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["content.js"]
+      "js": [
+        "jquery-2.2.3.min.js",
+        "content.js"
+      ]
     }
   ],
   "browser_action": {
@@ -17,6 +20,6 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-   "activeTab", "tabs", "http://*/*", "https://*/*"
+   "https://www.poshmark.com/"
    ]
 }

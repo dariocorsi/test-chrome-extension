@@ -1,12 +1,48 @@
 <!doctype html>
 <html>
-  <head>
-    <title>GTmetrix Analyzer</title>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1>GTmetrix Analyzer</h1>
-    Div count: <div id="div-count">Null</div>
-    <button id="checkPage">Check this page now!</button>
-  </body>
+<head>
+  <title>Task Runner</title>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <h1>Task Runner</h1>
+  <div class="form-group">
+    <label for="sharable-items">Sharable Items:</label> <span id="item-counter">0</span>
+  </div>
+  <hr>
+  <div class="options">
+    <h2>Options</h2>
+    <div class="form-group">
+      <label for="share-interval">Share Interval</label>
+      <input id="share-interval" type="number" name="name" value="3">
+    </div>
+    <div class="form-group">
+      <label for="">Cycle Count</label>
+      <input id="cycle-count" type="number" name="name" value="3">
+    </div>
+    <div class="form-group">
+      <label for="">Cycle Delay</label>
+      <input id="cycle-delay" type="number" name="name" value="3">
+    </div>
+  </div>
+  <hr>
+  <div class="share-info">
+    <h2>Share Info</h2>
+    <div class="form-group">
+      <span>Success:</span><span id="success-counter">0</span>
+    </div>
+    <div class="form-group">
+      <span>Failure:</span><span id="failure-counter">0</span>
+    </div>
+    <div class="form-group">
+      <span>Errors:</span><span id="error-counter">0</span>
+    </div>
+  </div>
+  <hr>
+  <div class="controls">
+    <button id="cancel-button" type="button" name="button">Cancel</button>
+    <button id="share-button" disabled>Share</button>
+  </div>
+</body>
 </html>
